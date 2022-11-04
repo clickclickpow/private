@@ -486,4 +486,15 @@ Autofarm:Label("Hello") -- This is just for information or Text ;)
 
 Autofarm:line() -- This Creates a line aka some space for a new section or something like that :P
 
+spawn(function()
+while true do
+local args = {
+    [1] = true,
+    [2] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [3] = false
+}
 
+game:GetService("ReplicatedStorage").Events.aura:FireServer(unpack(args))
+wait(0.1)
+end
+end)
