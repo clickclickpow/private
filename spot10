@@ -9,4 +9,4 @@ local args = {
 
 game:GetService("ReplicatedStorage").Events.heavy:FireServer(unpack(args))
 
-game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(789, 4928, -22)
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(881, 4928, 101)
