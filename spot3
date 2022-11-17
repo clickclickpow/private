@@ -1,0 +1,12 @@
+local args = {
+    [1] = "VanishStrike",
+    [2] = 0,
+    [3] = 80,
+    [4] = game:GetService("Players").LocalPlayer.Backpack["Vanish Strike"],
+    [5] = "White",
+    [6] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.swing
+}
+
+game:GetService("ReplicatedStorage").Events.heavy:FireServer(unpack(args))
+
+game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(740, 4933, -5)
