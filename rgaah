@@ -1,0 +1,24 @@
+_G.test = true
+
+while _G.test == true do
+loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/private/main/spot1'))()
+wait()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/private/main/spot2'))()
+wait()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/private/main/spot3'))()
+wait()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/private/main/spot4'))()
+wait()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/private/main/spot5'))()
+wait()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/private/main/spot6'))()
+wait()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/private/main/spot7'))()
+wait()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/private/main/spot8'))()
+wait()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/private/main/spot9'))()
+wait()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/private/main/spot10'))()
+wait()
+end
