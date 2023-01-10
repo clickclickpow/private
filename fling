@@ -1,0 +1,78 @@
+if game:GetService("Players").LocalPlayer:IsInGroup(16601259) then
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "made by zzotac", Text = "Anti lock/Fling", Duration = 1,});
+for _, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v:IsA("Script") and v.Name ~= "Health" and v.Name ~= "Sound" and v:FindFirstChild("LocalScript") then
+        v:Destroy()
+    end
+end
+game.Players.LocalPlayer.CharacterAdded:Connect(function(char)
+    repeat
+        wait()
+    until game.Players.LocalPlayer.Character
+    char.ChildAdded:Connect(function(child)
+        if child:IsA("Script") then 
+            wait(0.25)
+            if child:FindFirstChild("LocalScript") then
+                child.LocalScript:FireServer()
+            end
+        end
+    end)
+end)
+spawn(function()
+game:GetService("RunService").heartbeat:Connect(function()
+    if getgenv().DxFDs ~= false then
+        local CurrentVelocity = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(0,math.rad(0),0)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(0,math.rad(0.01),0)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(getgenv().Amnt, getgenv().Amnt ,getgenv().Amnt)
+        game.RunService.RenderStepped:Wait()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = CurrentVelocity
+    end
+end) end)
+spawn(function()
+game:GetService("RunService").heartbeat:Connect(function()
+    if getgenv().DxFDs ~= false then
+        local CurrentVelocity = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(0,math.rad(0),0)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(0,math.rad(0.01),0)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(math.random(getgenv().Amnt),power.random(getgenv().Amnt),math.random(getgenv().Amnt))
+        game.RunService.RenderStepped:Wait()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = CurrentVelocity
+    end
+end) end)
+
+wait(0.5)
+spawn(function()
+game:GetService("RunService").heartbeat:Connect(function()
+    if getgenv().DxFDs ~= false then
+        local CurrentVelocity = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(0,math.rad(0),0)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(0,math.rad(0.01),0)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new(getgenv().Amnt, getgenv().Amnt ,getgenv().Amnt)
+        game.RunService.RenderStepped:Wait()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = CurrentVelocity
+    end
+end) end)
+spawn(function()
+game:GetService("RunService").heartbeat:Connect(function()
+    if getgenv().DxFDs ~= false  then
+        local CurrentVelocity = game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(0,math.rad(0),0)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.Angles(0,math.rad(0.01),0)
+        game.Players.LocalPlayer.Character.HumanoidRootPart.AssemblyLinearVelocity = Vector3.new(math.random(getgenv().Amnt),math.random(getgenv().Amnt),math.random(getgenv().Amnt))
+        game.RunService.RenderStepped:Wait()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.Velocity = CurrentVelocity
+    end
+end) end)
+
+game:GetService("UserInputService").InputBegan:Connect(function(k)
+if k.KeyCode == key then
+if getgenv().DxFDs == true then
+    getgenv().DxFDs = false game:GetService("StarterGui"):SetCore("SendNotification", {Title = "twizzle", Text = "Off", Duration = 0.5,});
+    else 
+        getgenv().DxFDs = true game:GetService("StarterGui"):SetCore("SendNotification", {Title = "twizzle", Text = "On", Duration = 0.5,});
+        end end end)
+else
+game.Players.LocalPlayer:Kick("Not whitelisted group link copied to clipboard.")
+setclipboard("https://www.roblox.com/groups/16601259/G#!/about")
+end
