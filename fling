@@ -68,9 +68,9 @@ end) end)
 game:GetService("UserInputService").InputBegan:Connect(function(k)
 if k.KeyCode == key then
 if getgenv().DxFDs == true then
-    getgenv().DxFDs = false game:GetService("StarterGui"):SetCore("SendNotification", {Title = "twizzle", Text = "Off", Duration = 0.5,});
+    getgenv().DxFDs = false game:GetService("StarterGui"):SetCore("SendNotification", {Title = "zzotac", Text = "Off", Duration = 0.5,});
     else 
-        getgenv().DxFDs = true game:GetService("StarterGui"):SetCore("SendNotification", {Title = "twizzle", Text = "On", Duration = 0.5,});
+        getgenv().DxFDs = true game:GetService("StarterGui"):SetCore("SendNotification", {Title = "zzotac", Text = "On", Duration = 0.5,});
         end end end)
 else
 game.Players.LocalPlayer:Kick("Not whitelisted group link copied to clipboard.")
