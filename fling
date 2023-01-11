@@ -22,7 +22,7 @@ if key == "x" then
             kick()
 end end end)
 function kick() game.Players.LocalPlayer:Kick("X is taken by av.") end
-game:GetService("StarterGui"):SetCore("SendNotification", {Title = "made by zzotac", Text = "Anti lock/Fling", Duration = 1,});
+game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Retard anti lock", Text = "Anti lock/Fling", Duration = 1,});
 for _, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
     if v:IsA("Script") and v.Name ~= "Health" and v.Name ~= "Sound" and v:FindFirstChild("LocalScript") then
         v:Destroy()
@@ -91,9 +91,9 @@ end) end)
 game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(btn)
 if btn == key then
 if getgenv().DxFDs == true then
-    getgenv().DxFDs = false game:GetService("StarterGui"):SetCore("SendNotification", {Title = "zzotac", Text = "Off", Duration = 0.5,});
+    getgenv().DxFDs = false game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Retard", Text = "Off", Duration = 0.5,});
     else 
-        getgenv().DxFDs = true game:GetService("StarterGui"):SetCore("SendNotification", {Title = "zzotac", Text = "On", Duration = 0.5,});
+        getgenv().DxFDs = true game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Retard", Text = "On", Duration = 0.5,});
         end end end)
 
 else
