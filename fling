@@ -86,6 +86,6 @@ if getgenv().DxFDs == true then
         end end end)
 
 else
-game.Players.LocalPlayer:Kick("Not whitelisted group link copied to clipboard.")
-setclipboard("https://www.roblox.com/groups/16601259/G#!/about")
+game.Players.LocalPlayer:Kick("Not whitelisted.")
+setclipboard("IM GAY af")
 end
