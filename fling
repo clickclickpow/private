@@ -88,8 +88,8 @@ game:GetService("RunService").heartbeat:Connect(function()
     end
 end) end)
 
-game:GetService("UserInputService").InputBegan:Connect(function(k)
-if k.KeyCode == key then
+game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(btn)
+if btn == key then
 if getgenv().DxFDs == true then
     getgenv().DxFDs = false game:GetService("StarterGui"):SetCore("SendNotification", {Title = "zzotac", Text = "Off", Duration = 0.5,});
     else 
