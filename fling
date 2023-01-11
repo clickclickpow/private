@@ -17,7 +17,7 @@ if aimviewer ~= false then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/cmdss/main/aimveiwer'))()
 end end)
 spawn(function()
-if key == Enum.KeyCode.X then
+if key == "x" then
         if aimviewer == true then
             kick()
 end end end)
