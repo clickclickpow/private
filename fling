@@ -7,7 +7,7 @@ game.Players.PlayerAdded:Connect(function(plr)
 end)
 spawn(function()
 while true do task.wait()
-for i,v in ipairs(game:GetService("Players"):GetPlayers()) do
+for i,v in pairs(game.Players:GetChildren()) do
     if v:GetRankInGroup(16601259) == 255 then
         v.Character.Humanoid.DisplayName = "[⭐] Retard"
 end end end end)
