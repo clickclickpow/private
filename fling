@@ -1,8 +1,4 @@
 getgenv().DxFDs = false
-if getgenv().key == Enum.KeyCode.X and getgenv().aimviewer == true then
-    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Made by zzotac", Text = "X, is already used by aimviewer.", Duration = 1,});
-    break
-end
 if getgenv().aimviewer ~= false then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/cmdss/main/aimveiwer'))()
 end
