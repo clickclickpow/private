@@ -1,6 +1,6 @@
 getgenv().DxFDs = false
 getgenv().Amnt = 9999999
-if game:GetService("Players").LocalPlayer:IsInGroup(16601259) then
+if game.Players.LocalPlayer:GetRankInGroup(16601259) == 2 or game.Players.LocalPlayer:GetRankInGroup(16601259) == 255 then
 spawn(function()
 if aimviewer ~= false then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/cmdss/main/aimveiwer'))()
