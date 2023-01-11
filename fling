@@ -1,3 +1,4 @@
+print("updated")
 getgenv().DxFDs = false
 getgenv().Amnt = 9999999
 getgenv().code = Enum.KeyCode
