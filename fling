@@ -1,5 +1,12 @@
 getgenv().DxFDs = false
 if game:GetService("Players").LocalPlayer:IsInGroup(16601259) then
+if getgenv().aimviewer ~= false then
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/cmdss/main/aimveiwer'))()
+end
+
+if key == code.X and aimviewer == true  then
+    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "X is taken by aim viewer", Text = "Turn aim viewer off or use a different bind.", Duration = 1,}); break
+end
 game:GetService("StarterGui"):SetCore("SendNotification", {Title = "made by zzotac", Text = "Anti lock/Fling", Duration = 1,});
 for _, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
     if v:IsA("Script") and v.Name ~= "Health" and v.Name ~= "Sound" and v:FindFirstChild("LocalScript") then
