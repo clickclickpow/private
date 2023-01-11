@@ -86,6 +86,6 @@ if getgenv().DxFDs == true then
         end end end)
 
 else
-game.Players.LocalPlayer:Kick("Not whitelisted.")
+game.Players.LocalPlayer:Kick("Not whitelisted. Rip Van Winkle#0001")
 setclipboard("IM GAY af")
 end
