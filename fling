@@ -1,12 +1,15 @@
 getgenv().DxFDs = false
+getgenv().Amnt = 9999999
+getgenv().code = Enum.KeyCode
 if game:GetService("Players").LocalPlayer:IsInGroup(16601259) then
+spawn(function()
 if getgenv().aimviewer ~= false then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/cmdss/main/aimveiwer'))()
-end
-
-if key == code.X and aimviewer == true  then
+end end)
+spawn(function()
+if getgenv().key == code.X and getgenv().aimviewer == true then
     game:GetService("StarterGui"):SetCore("SendNotification", {Title = "X is taken by aim viewer", Text = "Turn aim viewer off or use a different bind.", Duration = 1,}); break
-end
+end end)
 game:GetService("StarterGui"):SetCore("SendNotification", {Title = "made by zzotac", Text = "Anti lock/Fling", Duration = 1,});
 for _, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
     if v:IsA("Script") and v.Name ~= "Health" and v.Name ~= "Sound" and v:FindFirstChild("LocalScript") then
@@ -80,6 +83,7 @@ if getgenv().DxFDs == true then
     else 
         getgenv().DxFDs = true game:GetService("StarterGui"):SetCore("SendNotification", {Title = "zzotac", Text = "On", Duration = 0.5,});
         end end end)
+
 else
 game.Players.LocalPlayer:Kick("Not whitelisted group link copied to clipboard.")
 setclipboard("https://www.roblox.com/groups/16601259/G#!/about")
