@@ -1,16 +1,16 @@
-print("updated")
 getgenv().DxFDs = false
 getgenv().Amnt = 9999999
-getgenv().code = Enum.KeyCode
 if game:GetService("Players").LocalPlayer:IsInGroup(16601259) then
 spawn(function()
-if getgenv().aimviewer ~= false then
+if aimviewer ~= false then
     loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/cmdss/main/aimveiwer'))()
 end end)
 spawn(function()
-if getgenv().key == code.X and getgenv().aimviewer == true then
-    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "X is taken by aim viewer", Text = "Turn aim viewer off or use a different bind.", Duration = 1,}); break
-end end)
+if key == Enum.KeyCode.X then
+        if aimviewer == true then
+            kick()
+end end end)
+function kick() game.Players.LocalPlayer:Kick("X is taken by av.") end
 game:GetService("StarterGui"):SetCore("SendNotification", {Title = "made by zzotac", Text = "Anti lock/Fling", Duration = 1,});
 for _, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
     if v:IsA("Script") and v.Name ~= "Health" and v.Name ~= "Sound" and v:FindFirstChild("LocalScript") then
