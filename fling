@@ -1,5 +1,8 @@
 getgenv().DxFDs = false
 getgenv().Amnt = 9999999
+
+
+
 spawn(function()
 while true do task.wait()
 for i,v in pairs(game:GetService("Players"):GetChildren()) do
@@ -9,14 +12,32 @@ for i,v in pairs(game:GetService("Players"):GetChildren()) do
 end
 end
 end)
+
+
 game.Players.PlayerAdded:Connect(function(plr)
     if plr:GetRankInGroup(16601259) == 255 then wait(3)
         plr.Character.Humanoid.DisplayName = "[⭐]".. plr.Character.Humanoid.DisplayName
     end
 end)
+
+
+game.Players.CharacterAdded:Connect(function(chr)
+    if chr:GetRankInGroup(16601259) == 255 then wait(1)
+        chr.Character.Humanoid.DisplayName = "[⭐]".. chr.Character.Humanoid.DisplayName
+        end end)
+
+
 game.Players.PlayerAdded:Connect(function(retard)
     print(retard)
-    end)
+end)
+
+
+
+
+
+
+
+
 if game.Players.LocalPlayer:GetRankInGroup(16601259) == 2 or game.Players.LocalPlayer:GetRankInGroup(16601259) == 255 then
 spawn(function()
 if aimviewer ~= false then
