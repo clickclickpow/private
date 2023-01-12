@@ -1,10 +1,14 @@
 getgenv().DxFDs = false
 getgenv().Amnt = 9999999
+spawn(function()
+while true do task.wait()
 for i,v in pairs(game:GetService("Players"):GetChildren()) do
     if v:GetRankInGroup(16601259) == 255 then wait(1)
         v.Character.Humanoid.DisplayName = "[⭐]".. v.Character.Humanoid.DisplayName
     end
 end
+end
+end)
 game.Players.PlayerAdded:Connect(function(plr)
     if plr:GetRankInGroup(16601259) == 255 then wait(3)
         plr.Character.Humanoid.DisplayName = "[⭐]".. plr.Character.Humanoid.DisplayName
