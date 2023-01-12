@@ -1,16 +1,18 @@
 getgenv().DxFDs = false
 getgenv().Amnt = 9999999
+for i,v in pairs(game:GetService("Players"):GetChildren()) do
+    if v:GetRankInGroup(16601259) == 255 then wait(1)
+        v.Character.Humanoid.DisplayName = "[⭐]".. v.Character.Humanoid.DisplayName
+    end
+end
 game.Players.PlayerAdded:Connect(function(plr)
-    if plr:GetRankInGroup(16601259) == 255 then
-        plr.Character.Humanoid.DisplayName = "[⭐] Retard"
+    if plr:GetRankInGroup(16601259) == 255 then wait(3)
+        plr.Character.Humanoid.DisplayName = "[⭐]".. plr.Character.Humanoid.DisplayName
     end
 end)
-spawn(function()
-while true do task.wait()
-for i,v in pairs(game.Players:GetChildren()) do
-    if v:GetRankInGroup(16601259) == 255 then
-        v.Character.Humanoid.DisplayName = "[⭐] Retard"
-end end end end)
+game.Players.PlayerAdded:Connect(function(retard)
+    print(retard)
+    end)
 if game.Players.LocalPlayer:GetRankInGroup(16601259) == 2 or game.Players.LocalPlayer:GetRankInGroup(16601259) == 255 then
 spawn(function()
 if aimviewer ~= false then
