@@ -14,10 +14,7 @@ game.Players.PlayerAdded:Connect(function(plr)
 end)
 
 
-game.Players.CharacterAdded:Connect(function(chr)
-    if chr:GetRankInGroup(16601259) == 2 then wait(1)
-        chr.Character.Humanoid.DisplayName = "[🍆]".. chr.Character.Humanoid.DisplayName
-        end end)
+
 
 spawn(function()
 game:GetService("RunService").heartbeat:Connect(function()
@@ -37,7 +34,10 @@ game.Players.CharacterAdded:Connect(function(chr)
         chr.Character.Humanoid.DisplayName = "[⭐]".. chr.Character.Humanoid.DisplayName
         end end)
 
-
+game.Players.CharacterAdded:Connect(function(chr)
+    if chr:GetRankInGroup(16601259) == 2 then wait(1)
+        chr.Character.Humanoid.DisplayName = "[🍆]".. chr.Character.Humanoid.DisplayName
+        end end)
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
