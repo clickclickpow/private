@@ -1,4 +1,5 @@
 if game.Players.LocalPlayer:GetRankInGroup(16601259) == 2 or game.Players.LocalPlayer:GetRankInGroup(16601259) == 255 then
+wait(3) game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Loading resolver", Text = "", Duration = 1,});
 game.Players.LocalPlayer.Character.Humanoid.Health = 0
 if view == true then
         local lock = false
