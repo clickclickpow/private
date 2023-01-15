@@ -1,4 +1,5 @@
 if game.Players.LocalPlayer:GetRankInGroup(16601259) == 2 or game.Players.LocalPlayer:GetRankInGroup(16601259) == 255 then
+game.Players.LocalPlayer.Character.Humanoid.Health = 0
 if view == true then
         local lock = false
     game:GetService("UserInputService").InputBegan:Connect(function(keygo,ok)
