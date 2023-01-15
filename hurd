@@ -114,11 +114,13 @@ game.Players.PlayerAdded:connect(
 )
 spawn(
     function()
+        g.Shape = Enum.PartType.Ball
+        g.Material = Enum.Material.Neon
         g.Anchored = true
+        q.Color = Color3.fromRGB(255, 0, 0)
         g.CanCollide = false
         g.Size = Vector3.new(8, 8, 8)
-        g.Transparency = 0.75
-        makemarker(g, g, Color3.fromRGB(106, 13, 173), 0.40, 0)
+        g.Transparency = 0.80
     end
 )
 f.KeyDown:Connect(
