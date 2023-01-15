@@ -117,9 +117,9 @@ spawn(
         g.Shape = Enum.PartType.Ball
         g.Material = Enum.Material.Neon
         g.Anchored = true
-        q.Color = Color3.fromRGB(255, 0, 0)
+        g.Color = Color3.fromRGB(255, 0, 0)
         g.CanCollide = false
-        g.Size = Vector3.new(8, 8, 8)
+        g.Size = Vector3.new(10, 10, 10)
         g.Transparency = 0.80
     end
 )
