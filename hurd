@@ -120,7 +120,7 @@ spawn(
         g.Color = Color3.fromRGB(255, 0, 0)
         g.CanCollide = false
         g.Size = Vector3.new(10, 10, 10)
-        g.Transparency = 0.80
+        g.Transparency = 0.86
     end
 )
 f.KeyDown:Connect(
