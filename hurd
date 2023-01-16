@@ -50,7 +50,6 @@ end)
 
 if Settings.beat.Resolver then
     game.Players.LocalPlayer.CharacterAdded:Connect(function()
-        wait(1.5)
         resolve()
         end)
     end
@@ -405,4 +404,8 @@ spawn(function()
     end
 end)
 end
+
+if Settings.beat.Resolve then
+    resolve()
+    end
 end
