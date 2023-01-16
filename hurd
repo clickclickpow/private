@@ -283,13 +283,6 @@ setclipboard("IM GAY af")
 end
 end
 
-
-if Settings.beat.Resolver then 
-    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Loading Resolver", Text = "", Duration = 0.5,});
-    wait(2)
-    game.Players.LocalPlayer.Character.Humanoid.Health = 0
-    end
-
 if Settings.beat.CFrame then
 getgenv().son = false
 getgenv().speedval = 0
