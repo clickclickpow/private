@@ -34,7 +34,7 @@ end
         return closestPlayer
     end
 
-function resolve()
+if Settings.beat.Resolver then
 local RunService = game:GetService("RunService")
 
 local function zeroOutYVelocity(hrp)
@@ -66,16 +66,8 @@ RunService.Heartbeat:Connect(function()
         end
     end)
 end)
-    end
+end
 
-if Settings.beat.Resolver then
-    game.Players.LocalPlayer.CharacterAdded:Connect(function()
-        resolve()
-        end)
-    end
-if Settings.beat.Resolve then
-    resolve()
-    end
 
 local b = game:GetService "Workspace".CurrentCamera
 local c
