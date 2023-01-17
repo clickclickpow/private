@@ -17,6 +17,27 @@ end
 end
 end)
 end
+
+
+if Settings.beat.LookAt then
+    local look = false
+game:GetService("UserInputService").InputBegan:Connect(function(keygo,ok)
+	if (not ok) then
+		if (keygo.KeyCode == Enum.KeyCode.Q) then
+			look = not look
+			if look then
+			    game:service'RunService'.Heartbeat:Connect(function()
+			        if look then
+			        gang = getClosestPlayerToCursor()
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.lookAt(game.Players.LocalPlayer.Character.HumanoidRootPart.Position, Vector3.new(gang.Character.HumanoidRootPart.Position.X  ,game.Players.LocalPlayer.Character.HumanoidRootPart.Position.Y  ,gang.Character.HumanoidRootPart.Position.Z))
+    end
+        end)
+			elseif not look then
+			end
+		end
+	end
+end)
+    end
     function getClosestPlayerToCursor()
         local closestPlayer
         local shortestDistance = math.huge
