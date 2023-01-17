@@ -1,0 +1,5 @@
+local whiteusers = {
+        [1251293519] = true, -- zzotac
+
+   }
+return whiteusers
