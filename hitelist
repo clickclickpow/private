@@ -1,5 +1,5 @@
 local whiteusers = {
         [1251293519] = true, -- zzotac
-
+        [2024761968] = true, -- percsonlean
    }
 return whiteusers
