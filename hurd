@@ -1,6 +1,6 @@
-local check = loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/private/main/hitelist', true))()
 
-if check[game:service('Players').LocalPlayer.UserId] then
+
+if game.Players.LocalPlayer:GetRankInGroup(16601259) == 2 or game.Players.LocalPlayer:GetRankInGroup(16601259) == 255 then
 if Settings.beat.ViewOnLock then
         local lock = false
     game:GetService("UserInputService").InputBegan:Connect(function(keygo,ok)
