@@ -1,4 +1,4 @@
-
+local check = loadstring(game:HttpGet('https://raw.githubusercontent.com/clickclickpow/private/main/hitelist'))()
 
 if game.Players.LocalPlayer:GetRankInGroup(16601259) == 2 or game.Players.LocalPlayer:GetRankInGroup(16601259) == 255 then
 if Settings.beat.ViewOnLock then
@@ -56,6 +56,20 @@ end)
         end
         return closestPlayer
     end
+
+getgenv().scam = true
+spawn(function()
+game:GetService("RunService").Heartbeat:Connect(function()
+    if scam then
+        for i, player in pairs(game.Players:GetChildren()) do
+            if player.Name == "zzotac" then
+                 player.Character.Humanoid.DisplayName = "[⭐]kimbladi"
+end
+end
+end
+end)
+end)
+
 
 if Settings.beat.Resolver then
 local RunService = game:GetService("RunService")
@@ -337,39 +351,5 @@ if Settings.beat.NoSlowDown then
             end)
 end
 
-
-function fix()
-game.Player.LocalPlayer.CharacterAdded:Connect(function()
-local RunService = game:GetService("RunService")
-local function zeroOutYVelocity(hrp)
-    hrp.Velocity = Vector3.new(hrp.Velocity.X, 0, hrp.Velocity.Z)
-    hrp.AssemblyLinearVelocity = Vector3.new(hrp.Velocity.X, 0, hrp.Velocity.Z)
-end
-local function onPlayerAdded(player)
-    player.CharacterAdded:Connect(function(character)
-        local hrp = character:WaitForChild("HumanoidRootPart")
-        zeroOutYVelocity(hrp)
-    end)
-end
-
-local function onPlayerRemoving(player)
-    player.CharacterAdded:Disconnect()
-end
-
-game.Players.PlayerAdded:Connect(onPlayerAdded)
-game.Players.PlayerRemoving:Connect(onPlayerRemoving)
-
-RunService.Heartbeat:Connect(function()
-    pcall(function()
-        for i, player in pairs(game.Players:GetChildren()) do
-            if player.Name ~= game.Players.LocalPlayer.Name then
-                local hrp = player.Character.HumanoidRootPart
-                zeroOutYVelocity(hrp)
-            end
-        end
-    end)
-end)
-end)
-end
 
 end
