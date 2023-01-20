@@ -161,7 +161,7 @@ game:GetService("RunService").heartbeat:Connect(function()
 end) end)
 
 game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(btn)
-if btn == Settings.binds.AntilockBind then
+if btn == Settings.Binds.AntilockBind then
 if getgenv().DxFDs == true then
     getgenv().DxFDs = false game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Retard anti lock", Text = "Off", Duration = 0.5,});
     else 
@@ -189,7 +189,7 @@ end
 end)
 spawn(function()
 game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(pre)
-if pre == Settings.binds.CFrameBind then
+if pre == Settings.Binds.CFrameBind then
 if son == true then
     son = false 
     else 
