@@ -1,0 +1,49 @@
+            local ye   = game.Players.LocalPlayer:GetMouse()
+local anim = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(game.Players.LocalPlayer.Backpack["Super Spirit Bomb"].LocalScript.Animation)
+anim:play()
+anim:AdjustSpeed(0.675)
+speed = .1
+wait()
+for i = 1,1 do
+    wait(speed) -- makes you wait .25 milliseconds 
+local args = {
+    [1] = false,
+    [2] = "SpiritBomb",
+    [3] = game:GetService("Players").LocalPlayer.Character.Effects,
+    [4] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [5] = 0,
+    [6] = game:GetService("Players").LocalPlayer.Backpack["Super Spirit Bomb"],
+    [7] = vector,
+    [8] = 400,
+    [9] = "Blue",
+    [10] = game:GetService("Players").LocalPlayer.Character.RightHand,
+    [11] = 0.1,
+    [12] = 1
+}
+
+game:GetService("ReplicatedStorage").Events.bigball:FireServer(unpack(args))
+wait()
+mouse = game.Players.LocalPlayer:GetMouse()
+local pos = mouse.Hit
+pos = Vector3.new(pos.X,pos.Y,pos.Z)
+vector = pos
+
+
+local args = {
+    [1] = true,
+    [2] = "SpiritBomb",
+    [3] = game:GetService("Players").LocalPlayer.Character.Effects,
+    [4] = game:GetService("Players").LocalPlayer.Character.HumanoidRootPart,
+    [5] = 0,
+    [6] = game:GetService("Players").LocalPlayer.Backpack["Super Spirit Bomb"],
+    [7] = vector,
+    [8] = 400,
+    [9] = "Blue",
+    [10] = game:GetService("Players").LocalPlayer.Character.RightHand,
+    [11] = 0.1,
+    [12] = 1
+}
+
+game:GetService("ReplicatedStorage").Events.bigball:FireServer(unpack(args))
+end
+anim:stop()
